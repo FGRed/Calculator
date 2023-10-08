@@ -10,9 +10,9 @@ import static org.example.util.Formulas.*;
 public class CalculatorService {
 
     public static void doOperation(int operation) {
-        if (operation == Operation.CALCULATE.ordinal()) {
+        if (operation == Operation.CALCULATE.getOperation()) {
             calculate();
-        } else if (operation == Operation.CONVERT.ordinal()) {
+        } else if (operation == Operation.CONVERT.getOperation()) {
             convert();
         } else {
             throw new IllegalArgumentException("Illegal operation!");
