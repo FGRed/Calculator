@@ -5,6 +5,7 @@ import org.example.enums.Operation;
 import java.util.Scanner;
 
 import static org.example.util.ConsoleCommandUtil.print;
+import static org.example.util.Formulas.*;
 
 public class CalculatorService {
 
@@ -95,16 +96,16 @@ public class CalculatorService {
                 Scanner sc2 = new Scanner(System.in);
                 value = sc2.nextDouble();
                 if(selConv == 1) {
-                    total = value * 0.09290304;
+                    total = value * SQUARE_ROOT_METERS_MUL;
                     print(value +" Square foot is " +total +" square meters.");
                 } if(selConv == 2) {
-                total = value * 10.7639104167;
+                total = value * SQUARE_ROOT_FEET_MUL;
                 print(value +" Square meters is " +total +" square foot.");
             } if(selConv == 3) {
-                total = value * 2.5899881103;
+                total = value * SQAURE_ROOT_KM_MUL;
                 print(value +" Square miles is " +total +" square kilometers.");
             } if(selConv == 4) {
-                total = value * 0.3861021585;
+                total = value * SQUARE_ROOT_MILSE_MUL;
                 print(value +" Square kilometers is " +total +" square miles.");
             }
                 break;
